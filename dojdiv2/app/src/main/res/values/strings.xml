@@ -2,7 +2,7 @@
     <string name="app_name">MelberryApp</string>
 
     <!-- Google maps API -->
-    <string name="google_maps_key">AIzaSyBnvJ85NixeMRpMEaDHarLzAC2LxOhMU2g</string>
+    <string name="google_maps_key">API KEY FOR GOOGLE MAPS</string>
 
     <!-- Dialogs labels -->
     <string name="cancel_label">Cancel</string>
