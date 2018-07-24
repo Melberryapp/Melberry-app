@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">MelberryApp</string>
+
+    <!-- Google maps API -->
+    <string name="google_maps_key">AIzaSyBnvJ85NixeMRpMEaDHarLzAC2LxOhMU2g</string>
+
+    <!-- Dialogs labels -->
+    <string name="cancel_label">Cancel</string>
+    <string name="close_label">Close</string>
+    <string name="try_again_label">Try again</string>
+    <string name="navigate_label">Navigate</string>
+    
+    <string name="no_connection_title">No internet connection</string>
+    <string name="no_connection_text">Check your internet connection and try again</string>
+
+    <string name="navigation_title">Navigation - test version</string>
+    <string name="navigation_text">Please be aware this is test version.\n\nWe provide navigation to the parking lot which is available now. We won’t be able to alert you if the parking lot is taken till you reach the place.\n\nWe are preparing this feature for you in next update.  </string>
+
+    <!-- Contact us - email -->
+    <string name="contact_email">hello@melberryapp.com</string>
+    <string name="contact_email_subject">I want to help</string>
+    <string name="contact_email_txt">:)</string>
+
+    <!-- Dynamic links -->
+    <string name="onSuccessDynamicLink_key">onSuccessDynamicLink</string>
+    <string name="onFailureDynamicLink_key">onFailureDynamicLink</string>
+
+    <!-- Shared preferences -->
+    <string name="skip_animation_key">skipAnimation</string>
+    <string name="disability_key">disability</string>
+    <string name="is_main_acitivty_opend_key">isMainActivityOpenedAtLaunch</string>
+    <string name="city_preference_key">cityPreference</string>
+
+    <!-- Toast -->
+    <string name="gps_turned_off_notification">GPS has to be turned on</string>
+
+    <!-- BottomSheet dynamic labels -->
+    <string name="bay_label">Bay:</string>
+    <string name="availabe_label">AVAILABLE</string>
+    <string name="unrestricted_label">Unrestricted - check details</string>
+    <string name="melbourne_price">5.5 $</string>
+    <string name="price_free">FREE</string>
+    <string name="eph_star_sign">*</string>
+    <string name="eph_star_empty_string" />
+
+    <!-- Firebase analytics -->
+    <string name="event_key">event</string>
+    <string name="expanded_detail_analytics_event">expanded_detail</string>
+    <string name="search_event_key">search</string>
+    <string name="navigate_event_key">navigate</string>
+
+    <!-- VM - Filter -->
+    <string name="filter_15_analytics_event">filter_15</string>
+    <string name="filter_30_analytics_event">filter_30</string>
+    <string name="filter_60_analytics_event">filter_60</string>
+    <string name="filter_120_analytics_event">filter_120</string>
+    <string name="filter_240_analytics_event">filter_240</string>
+
+    <!-- Layout xml Labels -->
+    <string name="one_four_p_label">1/4P</string>
+    <string name="one_two_p_label">1/2P</string>
+    <string name="one_p_label">1P</string>
+    <string name="two_p_label">2P</string>
+    <string name="four_p_label">4P</string>
+    <string name="current_parking_restriction_label">Current parking restriction</string>
+    <string name="price_per_hour_label">Price per hour</string>
+    <string name="eph_description">* - Excluded public holiday</string>
+    <string name="contact_us_label">Contact us</string>
+    <string name="contact_us_txt">Let us know if your city has parking sensors</string>
+    <string name="cta_contact_us">Not finding your city?</string>
+    <string name="pamplona_es_label">Pamplona(ES)</string>
+    <string name="stratford_ca_label">Stratford(CA)</string>
+    <string name="bratislava_sk_label">Bratislava(SK)</string>
+    <string name="melbourne_au_label">Melbourne(AU)</string>
+    <string name="available_cities_label">Available cities</string>
+
+    <string name="disability_title">People with disabilities</string>
+    <string name="disability_description">See particular restrictions and dedicated parking spots for disabled only</string>
+    <string name="disability_preferences_status">Disability preferences</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="save_preferences_button_label">Save preferences</string>
+
+    <string name="realtime_title">Availability in Real-time</string>
+    <string name="realtime_description">Find available parking spot faster and easier</string>
+    <string name="next_button_label">Next</string>
+
+    <string name="filter_title">Filter Parking spots</string>
+    <string name="filter_description">Choose the time and see parking spots fitting your needs</string>
+
+    <string name="price_and_restrictions_title">Price and restrictions</string>
+    <string name="price_and_restrictions_description">All the details about parking spots in your pocket</string>
+    <string name="got_it_button_label">Got it</string>
+
+    <string name="filter_label">Parking time</string>
+
+    <!-- Image descriptions -->
+    <string name="darkblue_animation_part_desc">Darkblue animation part</string>
+    <string name="blue_animation_part_desc">Blue animation part</string>
+    <string name="lightblue_animation_part_desc">LightBlue animation part</string>
+    <string name="logo_image_desc">Logo image</string>
+    <string name="navigation_floating_action_button_desc">Navigation Floating Action Button</string>
+    <string name="restrictions_icon_desc">Restrictions icon</string>
+    <string name="price_icon_desc">Price icon</string>
+    <string name="calendar_icon_desc">Calendar icon</string>
+    <string name="separating_line_desc">Separating line</string>
+    <string name="disability_icon_desc">Disability icon</string>
+    <string name="features_icon_desc">Features icon</string>
+    <string name="progress_dots_desc">Progress dots</string>
+</resources>

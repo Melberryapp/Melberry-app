@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.onboarding.OnboardingActivity">
+
+    <ImageView
+        android:id="@+id/darkblue_animation_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:src="@drawable/darkblue"
+        android:contentDescription="@string/darkblue_animation_part_desc" />
+
+    <ImageView
+        android:id="@+id/tirkis_animation_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tirkis"
+        android:contentDescription="@string/blue_animation_part_desc"/>
+
+    <ImageView
+        android:id="@+id/lightblue_animation_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:src="@drawable/lightblue"
+        android:contentDescription="@string/lightblue_animation_part_desc"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/splash_screen_logo"
+        android:contentDescription="@string/logo_image_desc"
+        />
+
+</FrameLayout>

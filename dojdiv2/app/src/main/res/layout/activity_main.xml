@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.melberry.viewModel.MainViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Container for map and column1 fragments -->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.melberry.view.MainActivity">
+
+            <FrameLayout
+                android:id="@+id/map_activity_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Map fragment -->
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_background"
+                    android:elevation="2dp"
+                    android:orientation="vertical">
+
+                    <fragment
+                        android:id="@+id/place_autocomplete_fragment"
+                        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bottomSheetBackground" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/changeCityFAB"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="@{() -> viewModel.onChangeCityButtonClick()}"
+                        android:src="@drawable/cityicon"
+                        android:visibility="@{viewModel.isBottomSheetHidden ? View.VISIBLE : View.GONE}"
+                        app:backgroundTint="@color/bottomSheetBackground"
+                        app:fabSize="normal" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/navigationFAB"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="@{() -> viewModel.onLocationButtonClick()}"
+                        android:src="@{viewModel.isCameraFollowingUsersLocation ? @drawable/location_icon : @drawable/gray_location_icon}"
+                        android:visibility="@{viewModel.isBottomSheetHidden ? View.VISIBLE : View.GONE}"
+                        app:backgroundTint="@color/bottomSheetBackground"
+                        app:fabSize="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:visibility="@{viewModel.isFilterVisible() ? View.GONE : View.VISIBLE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bottom_sheet_background"
+                    android:clickable="true"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:visibility="@{viewModel.isFilterVisible() ? View.VISIBLE : View.GONE}">
+
+                    <TextView
+                        android:id="@+id/filter_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/filter_label"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/one_four_p_label"
+                            android:textColor="@color/black"
+                            android:typeface='@{viewModel.is14Bold() ? "bold" : "normal"}' />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/one_two_p_label"
+                            android:textColor="@color/black"
+                            android:typeface='@{viewModel.is12Bold() ? "bold" : "normal"}' />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/one_p_label"
+                            android:textColor="@color/black"
+                            android:typeface='@{viewModel.is1Bold() ? "bold" : "normal"}' />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/two_p_label"
+                            android:textColor="@color/black"
+                            android:typeface='@{viewModel.is2Bold() ? "bold" : "normal"}' />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/four_p_label"
+                            android:textColor="@color/black"
+                            android:typeface='@{viewModel.is4Bold() ? "bold" : "normal"}' />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+
+                        <android.support.v7.widget.AppCompatSeekBar
+                            android:id="@+id/filter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="4"
+                            android:onProgressChanged="@{viewModel.progressListener}"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:splitTrack="false"
+                            android:thumb="@drawable/thumbimage"
+                            app:tickMark="@drawable/dot" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/design_bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:focusable="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="200dp"
+                app:behavior_skipCollapsed="true"
+                app:bottomSheetState="@{viewModel.bottomSheetState}"
+                app:bottomSheetStateChange="@{viewModel.bottomSheetStateListener}"
+                app:layout_behavior="@string/bottom_sheet_behavior">
+
+                <include
+                    layout="@layout/bottomsheet_layout"
+                    app:viewModel="@{viewModel}" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/progress_lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient"
+            android:visibility="@{viewModel.isBottomSheetCollapsed() ? View.VISIBLE : View.GONE}">
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "248009026398",
+    "firebase_url": "https://parking-test-staging.firebaseio.com",
+    "project_id": "parking-test-staging",
+    "storage_bucket": "parking-test-staging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248009026398:android:ab2f9d184a0e08e0",
+        "android_client_info": {
+          "package_name": "com.dojdiv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248009026398-op5lre410tgig3oda862g4csgl6rgsml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dojdiv2",
+            "certificate_hash": "461c0f6f546a93dcf0b9847c091582cb187bd773"
+          }
+        },
+        {
+          "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvUM5CjwWaHtqT4NUPCBsgJxpYgh1zoQE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248009026398:android:bf97c8477eaac636",
+        "android_client_info": {
+          "package_name": "com.melberry.realtime.parking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248009026398-qgqrdset7o88sqc5ab562nge0m2pba5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.melberry.realtime.parking",
+            "certificate_hash": "461c0f6f546a93dcf0b9847c091582cb187bd773"
+          }
+        },
+        {
+          "client_id": "248009026398-6vs4e206id5iqaj4vr0iof9fq9a7n62u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.melberry.realtime.parking",
+            "certificate_hash": "e199697855e95f7a3592dabea8c38c2d2324a89e"
+          }
+        },
+        {
+          "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvUM5CjwWaHtqT4NUPCBsgJxpYgh1zoQE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248009026398-27dtm6vies68vt1q6hf5nqednaq7mimc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

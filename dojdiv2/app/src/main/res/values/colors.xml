@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1f129e</color>
+
+    <color name="bottomSheetBackground">#ffffff</color>
+
+    <color name="POIgrey">#3C3F41</color>
+    <color name="textColor">#253E90</color>
+
+
+    <color name="pink">#f42d5b</color>
+    <color name="light_blue">#3e1acf</color>
+    <color name="dark_blue">#1f129e</color>
+    <color name="extra_light_blue">#49afe3</color>
+    <color name="azur">#9ae0cf</color>
+    <color name="green">#1BD392</color>
+    <color name="black">#000000</color>
+    <color name="gray">#D8D8D8</color>
+
+</resources>
